@@ -45,17 +45,17 @@ assignPoints();
 
 
 // assign randomly generated values to each respective button as a new attribute (value) in the button element
-    $('#blue').attr('value', blueValue);
-    $('#red').attr('value', redValue);
-    $('#yellow').attr('value', yellowValue);
-    $('#green').attr('value', greenValue);
+    $('#blue').data('value', blueValue);
+    $('#red').data('value', redValue);
+    $('#yellow').data('value', yellowValue);
+    $('#green').data('value', greenValue);
 
 
 // on click event for each crystal button that adds the given value to currentValue
 $(document).ready(function(){
 
 $('.btn').on('click', function () {
-    currentValue += parseInt($(this).val());
+    currentValue += $(this).data('value');
     currentValueText.text(currentValue);
 
 // create reset function for after a win or loss
