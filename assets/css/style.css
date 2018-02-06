@@ -1,0 +1,33 @@
+@font-face {
+    font-family: crystalFont;
+    src: url(../images/CRYSTALC.ttf);
+}
+body {
+    background-image: url(../images/GemBackground.png);
+}
+
+h1{
+    font-size: 50px;
+}
+
+#title {
+    font-family: crystalFont;
+    font-size: 75px;
+    color: aliceblue;
+}
+#wins,
+#losses,
+#currentValue,
+#goalValue {
+    line-height: 50%;
+}
+
+.panel-title {
+    font-family: crystalFont;
+    font-size: 30px;
+    margin-top: 15%;
+}
+
+p {
+    /* font-weight: 1000; */
+}
