@@ -3,7 +3,8 @@
     src: url(../images/CRYSTALC.TTF);
 }
 body {
-    background-image: url(../images/GemBackground.png);
+    background: url(../images/GemBackground.png) no-repeat center center fixed;
+    background-size: cover;
 }
 
 h1{

@@ -58,6 +58,7 @@ $('.btn').on('click', function () {
     currentValue += $(this).data('value');
     currentValueText.text(currentValue);
     console.log(this);
+    $('#blue').click(e => rollSound.play());
 
 // create reset function for after a win or loss
     function reset() {
